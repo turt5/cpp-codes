@@ -1,14 +1,4 @@
 #include<iostream>
-// #include<bits/stdc++.h>
-// #include<string>
-// #include<cmath>
-// #include<algorithm>
-// #include<iomanip>
-// #include<queue>
-// #include<bitset>
-// #include<unordered_map>
-// #include<unordered_set>
-
 using namespace std;
 
 void printArray(int array[], int n)

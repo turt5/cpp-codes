@@ -6,7 +6,8 @@
 **********************  Facebook: www.facebook.com/codewithlimon  **********************
 **********************  Github: www.github.com/codewithLimon      **********************
 **********************  Codeforces Handle: TheShadowHunter        **********************
-**********************  Submission Date: -/-/-                    **********************   
+**********************  Submission Date: 6/22/2023                **********************
+**********************  Problem: Codeforces 1611B                 **********************  
 
 
 */ 
@@ -17,9 +18,19 @@
 using namespace std;
 
 void start(){
-    //start writing codes here:
+    int a,b;
+    cin>>a>>b;
+
+    if(b>a){
+        swap(a,b);
+    }
+
+    int difference=abs(a-b);
 
 
+    int Maxteams=min(difference/2,b)+(b-min(difference/2,b))/2;
+
+    cout<<Maxteams<<endl;
 }
 
 int main(int argc, char const *argv[])

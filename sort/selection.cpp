@@ -14,15 +14,6 @@ int findMin(int array[], int size, int start){
 
     return index;
 }
-void printArray(int array[], int n)
-{
-    for (int i = 0; i < n; i++)
-    {
-        cout << array[i] << "  ";
-    }
-
-    cout<<"\n";
-}
 
 void selectionSort(int array[], int size){
     int currentPosition=0;
