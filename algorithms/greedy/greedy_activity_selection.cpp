@@ -19,21 +19,23 @@ bool comparator(Activity a, Activity b)
     return a.finish < b.finish;
 }
 
-void printV(vector<Activity> act){
-    int n = act.size();
-    for (int i = 0; i < n;i++){
-        if(i==n-1){
-            cout << "{" << act[i].start << "," << act[i].finish << "}" << endl;
-        }else{
-            cout << "{" << act[i].start << "," << act[i].finish << "}, ";
-        }
-    }
-}
+// void printV(vector<Activity> act){
+//     int n = act.size();
+//     for (int i = 0; i < n;i++){
+//         if(i==n-1){
+//             cout << "{" << act[i].start << "," << act[i].finish << "}" << endl;
+//         }else{
+//             cout << "{" << act[i].start << "," << act[i].finish << "}, ";
+//         }
+//     }
+// }
 
 vector<int> activitySelection(vector<Activity> &activities)
 {
     sort(activities.begin(), activities.end(), comparator);
-    printV(activities);
+    
+    // printV(activities);
+
     cout << endl;
     int selected = 0;
     int size = activities.size();
