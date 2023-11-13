@@ -99,4 +99,5 @@ int main(){
     cout << endl;
 
     cout << "Max sum: " << r.sum << endl;
+    cout<< "index: "<<r.leftIndex<<","<<r.rightIndex<<endl;
 }

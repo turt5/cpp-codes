@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Object
-{
+class Object{
 public:
     int profit;
     int weight;
@@ -12,13 +11,13 @@ public:
     {
         this->profit = profit;
         this->weight = weight;
-        this->ppw = (double)profit / weight; // Calculate profit per unit weight
+        this->ppw = (double)profit / weight; 
     }
 };
 
 bool comparator(Object a, Object b)
 {
-    return a.ppw > b.ppw; // Sort in descending order of profit per unit weight
+    return a.ppw > b.ppw; 
 }
 
 double getMaxProfit(vector<Object> &objects, int n, int knapsackSize)
@@ -53,11 +52,18 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        int p, w;
-        cin >> p >> w;
+        int w,p;
+        cin >> w>> p;
         objects.push_back(Object(p, w));
     }
 
     cout << "Max profit: " << getMaxProfit(objects, n, k) << endl;
     return 0;
 }
+
+
+
+// 1
+// 1.33
+// 1.25
+// 1.4

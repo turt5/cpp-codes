@@ -80,5 +80,6 @@ int main()
     }
 
     vector<int> result = activitySelection(activities);
+    cout<<result<<endl;
     print(result);
 }
