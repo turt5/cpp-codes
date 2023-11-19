@@ -51,12 +51,16 @@ int maxProfitGreedy(vector<Product> &products, int n, int knapsack)
     return profit;
 }
 
+int recursiveCalls=0;
+
 int maxProfitBruteForce(vector<Product> &products, int index, int knapsack)
 {
     if (knapsack == 0 || index == products.size())
     {
         return 0;
     }
+
+    recursiveCalls++;
 
     Product currentProduct = products[index];
 
@@ -98,4 +102,5 @@ int main()
 
     cout << "Greedy Max profit: " << maxProfitGreedy(products, n, knapsackSize) << endl;
     cout << "BruteForce Max profit: " << maxProfitBruteForce(products, 0, knapsackSize);
+    cout<<recursiveCalls<<endl;
 }
